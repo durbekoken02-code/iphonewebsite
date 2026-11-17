@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="apple.css">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <header class="global-nav" id="globalNav">
+        <div class="nav-content">
+            <a href="#" class="nav-link nav-logo" aria-label="Apple">
+                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"/>
+                </svg>
+            </a>
+
+            <nav class="nav-items" id="navItems">
+                <a href="#store" class="nav-link">Store</a>
+                <a href="#mac" class="nav-link">Mac</a>
+                <a href="#ipad" class="nav-link">iPad</a>
+                <a href="#iphone" class="nav-link">iPhone</a>
+                <a href="#watch" class="nav-link">Watch</a>
+                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#airpods" class="nav-link">AirPods</a>
+                <a href="#tv-home" class="nav-link">TV &amp; Home</a>
+                <a href="#entertainment" class="nav-link">Entertainment</a>
+                <a href="#accessories" class="nav-link">Accessories</a>
+                <a href="#support" class="nav-link">Support</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="nav-icon-btn" id="searchBtn" aria-label="Search apple.com">
+                    <svg height="44" viewBox="0 0 15 44" width="15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"/>
+                    </svg>
+                </button>
+                <button class="nav-icon-btn" id="bagBtn" aria-label="Shopping Bag">
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"/>
+                    </svg>
+                </button>
+                <button class="nav-icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line top"></span>
+                    <span class="hamburger-line bottom"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Dropdown -->
+        <div class="nav-dropdown search-dropdown" id="searchDropdown">
+            <div class="dropdown-inner">
+                <div class="search-input-wrap">
+                    <svg height="20" viewBox="0 0 15 44" width="20" fill="#86868b">
+                        <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"/>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search apple.com" autocomplete="off">
+                </div>
+                <div class="quick-links">
+                    <p class="quick-links-title">Quick Links</p>
+                    <ul>
+                        <li><a href="#store"><span>&rarr;</span> Find a Store</a></li>
+                        <li><a href="#iphone"><span>&rarr;</span> iPhone 17 Pro</a></li>
+                        <li><a href="#mac"><span>&rarr;</span> MacBook Pro</a></li>
+                        <li><a href="#vision"><span>&rarr;</span> Apple Vision Pro</a></li>
+                        <li><a href="#airpods"><span>&rarr;</span> AirPods Pro 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bag Dropdown -->
+        <div class="nav-dropdown bag-dropdown" id="bagDropdown">
+            <div class="dropdown-inner">
+                <h2 class="bag-title">Your Bag is empty.</h2>
+                <p class="bag-subtitle"><a href="#">Sign in</a> to see if you have any saved items</p>
+                <div class="quick-links">
+                    <p class="quick-links-title">My Profile</p>
+                    <ul>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Your Saves</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <ul class="mobile-nav-list">
+            <li><a href="#store">Store</a></li>
+            <li><a href="#mac">Mac</a></li>
+            <li><a href="#ipad">iPad</a></li>
+            <li><a href="#iphone">iPhone</a></li>
+            <li><a href="#watch">Watch</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#airpods">AirPods</a></li>
+            <li><a href="#tv-home">TV &amp; Home</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Ribbon Banner -->
+        <div class="ribbon-banner">
+            <p>Get $180–$650 in credit when you trade in iPhone 13 or higher.<sup>1</sup> <a href="#trade-in">Shop iPhone &gt;</a></p>
+        </div>
+
+        <!-- Hero 1: iPhone 17 Pro -->
+        <section class="hero-section hero-dark" id="iphone">
+            <div class="hero-content">
+                <h2 class="hero-headline">iPhone 17 Pro</h2>
+                <p class="hero-subhead">Hello, Apple Intelligence.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#" class="btn btn-outline-light">Buy</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1800&q=85" alt="iPhone 17 Pro Titanium Finish" class="hero-img">
+                <p class="ai-footnote">Apple Intelligence available now<sup>2</sup></p>
+            </div>
+        </section>
+
+        <!-- Hero 2: iPhone 17 -->
+        <section class="hero-section hero-gradient-blue">
+            <div class="hero-content">
+                <h2 class="hero-headline">iPhone 17</h2>
+                <p class="hero-subhead">Hello, Apple Intelligence.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-white">Learn more</a>
+                    <a href="#" class="btn btn-outline-white">Buy</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1800&q=85" alt="iPhone 17 Colors" class="hero-img">
+                <p class="ai-footnote light-text">Apple Intelligence available now<sup>2</sup></p>
+            </div>
+        </section>
+
+        <!-- Hero 3: Apple Watch Series 11 -->
+        <section class="hero-section hero-light" id="watch">
+            <div class="hero-content">
+                <h2 class="hero-headline watch-logo">
+                    <svg height="36" viewBox="0 0 14 44" width="28" fill="#1d1d1f">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"/>
+                    </svg>
+                    WATCH
+                </h2>
+                <p class="series-label">SERIES 11</p>
+                <p class="hero-subhead">Thinstant classic.</p>
+                <div class="cta-links">
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#" class="btn btn-outline-primary">Buy</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1800&q=85" alt="Apple Watch Series 11" class="hero-img">
+            </div>
+        </section>
+
+        <!-- 2-Column Promo Grid -->
+        <section class="promo-grid">
+            <!-- Grid Item 1: MacBook Pro -->
+            <div class="promo-card card-dark" id="mac">
+                <div class="card-content">
+                    <h3 class="card-headline">MacBook Pro</h3>
+                    <p class="card-subhead">A work of smart.</p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=85" alt="MacBook Pro">
+                </div>
+                <p class="card-footnote ai-gradient">Built for Apple Intelligence.</p>
+            </div>
+
+            <!-- Grid Item 2: iPad Pro -->
+            <div class="promo-card card-dark" id="ipad">
+                <div class="card-content">
+                    <h3 class="card-headline">iPad Pro</h3>
+                    <p class="card-subhead">Unbelievably thin. Incredibly powerful.</p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=85" alt="iPad Pro">
+                </div>
+                <p class="card-footnote ai-gradient">Built for Apple Intelligence.</p>
+            </div>
+
+            <!-- Grid Item 3: Apple Vision Pro -->
+            <div class="promo-card card-light bottom-aligned" id="vision">
+                <div class="card-image bg-cover">
+                    <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=1200&q=85" alt="Apple Vision Pro">
+                </div>
+                <div class="card-content overlay-bottom">
+                    <h3 class="card-headline">Vision Pro</h3>
+                    <p class="card-subhead">The era of spatial computing is here.</p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Item 4: AirPods Pro 3 -->
+            <div class="promo-card card-dark bottom-aligned" id="airpods">
+                <div class="card-image bg-cover">
+                    <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=1200&q=85" alt="AirPods Pro">
+                </div>
+                <div class="card-content overlay-bottom">
+                    <h3 class="card-headline">AirPods Pro 3</h3>
+                    <p class="card-subhead">Now with the Hearing Aid feature.<sup>3</sup></p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Item 5: Trade In -->
+            <div class="promo-card card-light" id="trade-in">
+                <div class="card-content">
+                    <h3 class="card-headline">Trade In</h3>
+                    <p class="card-subhead">Get $180–$650 in credit when you trade in iPhone 13 or higher.<sup>1</sup></p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Get your estimate</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1200&q=85" alt="Apple Trade In">
+                </div>
+            </div>
+
+            <!-- Grid Item 6: Apple Card -->
+            <div class="promo-card card-light">
+                <div class="card-content">
+                    <h3 class="card-headline">Card</h3>
+                    <p class="card-subhead">Get up to 3% Daily Cash back with every purchase.</p>
+                    <div class="cta-links">
+                        <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Apply now</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Apple Card">
+                </div>
+            </div>
+        </section>
+
+        <!-- Apple TV+ Entertainment Carousel -->
+        <section class="tv-carousel-section" id="entertainment">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1600&q=85" alt="Severance">
+                        <div class="slide-overlay">
+                            <span class="tv-badge">Apple TV+</span>
+                            <div class="slide-info">
+                                <button class="btn btn-white">Stream now</button>
+                                <p><strong>Thriller</strong> &bull; The work is mysterious and important.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=85" alt="Silo">
+                        <div class="slide-overlay">
+                            <span class="tv-badge">Apple TV+</span>
+                            <div class="slide-info">
+                                <button class="btn btn-white">Stream now</button>
+                                <p><strong>Sci-Fi</strong> &bull; The truth will surface.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=85" alt="Ted Lasso">
+                        <div class="slide-overlay">
+                            <span class="tv-badge">Apple TV+</span>
+                            <div class="slide-info">
+                                <button class="btn btn-white">Stream now</button>
+                                <p><strong>Comedy</strong> &bull; Kindness makes a comeback.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1600&q=85" alt="Foundation">
+                        <div class="slide-overlay">
+                            <span class="tv-badge">Apple TV+</span>
+                            <div class="slide-info">
+                                <button class="btn btn-white">Stream now</button>
+                                <p><strong>Sci-Fi</strong> &bull; All empires fall.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+            </div>
+
+            <div class="carousel-controls">
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="play-pause-btn" id="playPauseBtn" aria-label="Pause slideshow">&#10074;&#10074;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <section class="footer-footnotes">
+                <ol>
+                    <li>Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card.</li>
+                    <li>Apple Intelligence is available in beta on all iPhone 17 models, iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to English.</li>
+                    <li>Hearing Aid and Hearing Test features are FDA authorized and intended for individuals 18 years of age or older with perceived mild to moderate hearing loss.</li>
+                </ol>
+            </section>
+
+            <nav class="footer-directory">
+                <div class="footer-column">
+                    <h4>Shop and Learn</h4>
+                    <ul>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV &amp; Home</a></li>
+                        <li><a href="#">AirTag</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                    <h4>Apple Wallet</h4>
+                    <ul>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Apple Card</a></li>
+                        <li><a href="#">Apple Pay</a></li>
+                        <li><a href="#">Apple Cash</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Manage Your Apple Account</a></li>
+                        <li><a href="#">Apple Store Account</a></li>
+                        <li><a href="#">iCloud.com</a></li>
+                    </ul>
+                    <h4>Entertainment</h4>
+                    <ul>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple TV+</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">Apple Fitness+</a></li>
+                        <li><a href="#">Apple News+</a></li>
+                        <li><a href="#">Apple Podcasts</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Apple Store</h4>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Group Reservations</a></li>
+                        <li><a href="#">Apple Camp</a></li>
+                        <li><a href="#">Apple Store App</a></li>
+                        <li><a href="#">Certified Refurbished</a></li>
+                        <li><a href="#">Apple Trade In</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shopping Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li><a href="#">Apple and Business</a></li>
+                        <li><a href="#">Shop for Business</a></li>
+                    </ul>
+                    <h4>For Education</h4>
+                    <ul>
+                        <li><a href="#">Apple and Education</a></li>
+                        <li><a href="#">Shop for K-12</a></li>
+                        <li><a href="#">Shop for College</a></li>
+                    </ul>
+                    <h4>For Healthcare</h4>
+                    <ul>
+                        <li><a href="#">Apple in Healthcare</a></li>
+                        <li><a href="#">Mac in Healthcare</a></li>
+                        <li><a href="#">Health on Apple Watch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Apple Values</h4>
+                    <ul>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Inclusion and Diversity</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Racial Equity and Justice</a></li>
+                        <li><a href="#">Supply Chain</a></li>
+                    </ul>
+                    <h4>About Apple</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Apple Leadership</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Ethics &amp; Compliance</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="footer-legal">
+                <p class="shop-ways">More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+                <div class="legal-bottom">
+                    <p>Copyright &copy; 2026 Apple Inc. All rights reserved.</p>
+                    <ul class="legal-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Sales and Refunds</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                    <a href="#" class="country-link">United States</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="apple.js"></script>
+</body>
+</html>
